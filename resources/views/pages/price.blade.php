@@ -1,69 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>HALO - Photography Portfolio Template</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="HALO photography portfolio template">
-	<meta name="keywords" content="photography, portfolio, onepage, creative, html">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Favicon -->   
-	<link href="img/favicon.ico" rel="shortcut icon"/>
-
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
-
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/flaticon.css"/>
-	<link rel="stylesheet" href="css/animate.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
-
-
-	<!--[if lt IE 9]>
-	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
-</head>
-<body>
-	<!-- Page Preloder -->
-	<div id="preloder">
-		<div class="loader"></div>
-	</div>
-
-	<!-- Header section start -->
-	<header class="header-section sp-pad">
-		<h3 class="site-logo">HALO</h3>
-		<form class="search-top">
-			<button class="se-btn"><i class="fa fa-search"></i></button>
-			<input type="text" placeholder="Search.....">
-		</form>
-		<div class="nav-switch">
-			<i class="fa fa-bars"></i>
-		</div>
-		<nav class="main-menu">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">about us</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<!-- Header section end -->
+@extends('pages.master')
+@section('content')
 
 
 	<!-- Page top section start -->
 	<div class="page-top-area set-bg" data-setbg="img/headers-bg/4.jpg">
 		<div class="breadcrumb-area">
-			<a href="#">Home</a> / <span>Elements</span>
+			<a href="{{ route('index')}} ">Home</a> / <span>Prices</span>
 		</div>
 	</div>
 	<!-- Page top section end -->
+<style > section.pricing {
+	background: #007baf;
+	background: linear-gradient(to right, #0062E6, #33AEFF);
+	}
+
+	.pricing .card {
+	border: none;
+	border-radius: 1rem;
+	transition: all 0.2s;
+	box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+	}
+
+	.pricing hr {
+	margin: 1.5rem 0;
+	}
+
+	.pricing .card-title {
+	margin: 0.5rem 0;
+	font-size: 0.9rem;
+	letter-spacing: .1rem;
+	font-weight: bold;
+	}
+
+	.pricing .card-price {
+	font-size: 3rem;
+	margin: 0;
+	}
+
+	.pricing .card-price .period {
+	font-size: 0.8rem;
+	}
+
+	.pricing ul li {
+	margin-bottom: 1rem;
+	}
+
+	.pricing .text-muted {
+	opacity: 0.7;
+	}
+
+	.pricing .btn {
+	font-size: 80%;
+	border-radius: 5rem;
+	letter-spacing: .1rem;
+	font-weight: bold;
+	padding: 1rem;
+	opacity: 0.7;
+	transition: all 0.2s;
+	}
+
+	/* Hover Effects on Card */
+
+	@media (min-width: 992px) {
+	.pricing .card:hover {
+		margin-top: -.25rem;
+		margin-bottom: .25rem;
+		box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+	}
+	.pricing .card:hover .btn {
+		opacity: 1;
+	}}
+</style>
+	<section class="pricing py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Free Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Mini Session</h5>
+            <h6 class="card-price text-center">50,000<span class="period">MMK</span></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>10 Photo</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>10 (4"x6" Print) </li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Full-size softcopy</li>
+			  <li><span class="fa-li"><i class="fas fa-check"></i></span>1 Hours shooting time</li>
+			  <li><span class="fa-li"><i class="fas fa-check"></i></span>1 Location</li>
+			  <li><span class="fa-li"><i class="fas fa-check"></i></span> - </li>
+			  <li><span class="fa-li"><i class="fas fa-check"></i></span> - </li>
+			 
+
+              <li class="text-muted text-center"><span class="fa-li"><i class="fas fa-times"></i></span>Best for Solo/Convocation Portrait</li>
+
+         
+            </ul>
+            <a href="#" class="btn btn-block btn-primary text-uppercase">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Plus Tier -->
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+		  <h5 class="card-title text-muted text-uppercase text-center">Basic Session</h5>
+            <h6 class="card-price text-center">100,000<span class="period">MMK</span></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>20 Photo</li>
+			  <li><span class="fa-li"><i class="fas fa-check"></i></span>20 (4"x6" Print) </li>
+			  <li><span class="fa-li"><i class="fas fa-check"></i></span>1 (14"x20" Print) </li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Full-size softcopy</li>
+			  <li><span class="fa-li"><i class="fas fa-check"></i></span>2 Hours shooting time</li>
+			  <li><span class="fa-li"><i class="fas fa-check"></i></span>2 Location</li>
+			  <li><span class="fa-li"><i class="fas fa-check"></i></span> - </li>
+			
+              <li class="text-muted text-center"><span class="fa-li"><i class="fas fa-times"></i></span>Best for Couple/Friendship Goal</li>
+
+            </ul>
+            <a href="#" class="btn btn-block btn-primary text-uppercase">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Pro Tier -->
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+		  <h5 class="card-title text-muted text-uppercase text-center">Extended Session</h5>
+            <h6 class="card-price text-center">150,000<span class="period">MMK</span></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>30 Photo</li>
+			  <li><span class="fa-li"><i class="fas fa-check"></i></span>30 (4"x6" Print) </li>
+			  <li><span class="fa-li"><i class="fas fa-check"></i></span>1 (20"x30" Print)</li>
+			  <li><span class="fa-li"><i class="fas fa-check"></i></span>1 (4"x 6" Album)</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Full-size softcopy</li>
+			  <li><span class="fa-li"><i class="fas fa-check"></i></span>3 Hours shooting time</li>
+			  <li><span class="fa-li"><i class="fas fa-check"></i></span>3 Location</li>
+              <li class="text-muted text-center"><span class="fa-li"><i class="fas fa-times"></i></span>Best for Prewedding/Engagement</li>
+
+            </ul>
+            <a href="#" class="btn btn-block btn-primary text-uppercase">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 	<!-- Elements section start -->
@@ -230,33 +313,4 @@
 	<!-- Elements section end -->
 
 
-	<!-- Footer section start -->
-	<footer class="footer-section spad">
-		<div class="container text-center">
-			<h2>Let’s work together!</h2>
-			<p>office@template.com</p>
-			<div class="social">
-				<a href="#"><i class="fa fa-pinterest"></i></a>
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-dribbble"></i></a> </br>
-
-</br><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				
-			</div>
-		</div>
-	</footer>
-	<!-- Footer section end -->
-
-
-	<!--====== Javascripts & Jquery ======-->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/mixitup.min.js"></script>
-	<script src="js/circle-progress.min.js"></script>
-	<script src="js/main.js"></script>
-</body>
-</html>
+@endsection

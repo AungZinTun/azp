@@ -1,5 +1,10 @@
 <?php
-Route::get('/', 'HomeController@index' );
+
+Route::get('/', 'HomeController@index' )->name('index');
+Route::get('/portfolio', 'HomeController@portfolio' )->name('portfolio');
+Route::get('/price', 'HomeController@price' )->name('price');
+Route::get('/tutorial', 'HomeController@tutorial' )->name('tutorial');
+Route::get('/contact', 'HomeController@contact' )->name('contact');
 
 // Authentication Routes...
 $this->get('login', 'Auth\LoginController@showLoginForm')->name('login');

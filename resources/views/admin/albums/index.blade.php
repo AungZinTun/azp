@@ -6,7 +6,6 @@
     @can('album_create')
     <p>
         <a href="{{ route('admin.albums.create') }}" class="btn btn-success">@lang('quickadmin.qa_add_new')</a>
-        
     </p>
     @endcan
 
