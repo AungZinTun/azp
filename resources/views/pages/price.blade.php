@@ -153,97 +153,71 @@
 	<section class="elements-section spad">
 		<div class="container">
 			<!-- Buttons element -->
-			<div class="element">
+			<!-- <div class="element">
 				<div class="sp-title">Buttons</div>
 				<button class="site-btn mr-5">Read More</button>
 				<button class="site-btn btn-two mr-5">Read More</button>
 				<button class="site-btn btn-three mr-5">Read More</button>
 				<button class="site-btn btn-four">Read More</button>
-			</div>
+			</div> -->
 			<!-- Accordions & tabs -->
 			<div class="element">
-				<div class="sp-title">Accordions & tabs</div>
+				<div class="sp-title">FAQ</div>
 				<div class="row">
 					<div class="col-lg-6">
 						<!-- Accordions -->
 						<div id="accordion" class="accordion-area">
 							<div class="panel">
 								<div class="panel-header" id="headingOne">
-									<button class="panel-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">Curabitur venenatis efficitur lorem sed tempor</button>
+									<button class="panel-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">How you guarrentee your services</button>
 								</div>
 								<div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
 									<div class="panel-body">
-										<p>Suspendisse dictum enim sit amet libero malesuada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. </p>
+										<p> We will work hard until you satisfy.
+										In case you dont satisfy the result, no need to pay. </p>
 									</div>
 								</div>
 							</div>
 							<div class="panel">
 								<div class="panel-header" id="headingTwo">
-									<button class="panel-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Nullam vestibulum convallis risus vel condimentum</button>
+									<button class="panel-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2"> Can I get all photo taken throughout the session. </button>
 								</div>
 								<div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 									<div class="panel-body">
-										<p>Suspendisse dictum enim sit amet libero malesuada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. </p>
+										<p> You will get only high-quality retouched photos.  </p>
 									</div>
 								</div>
 							</div>
 							<div class="panel">
 								<div class="panel-header active" id="headingThree">
-									<button class="panel-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">Vestibulum convallis risus vel condimentum</button>
+									<button class="panel-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">Can I get only softcopy</button>
 								</div>
 								<div id="collapse3" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
 									<div class="panel-body">
-										<p>Suspendisse dictum enim sit amet libero malesuada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. </p>
+										<p>Yes,cost printing will be deduced from the package.</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6">
-						<!-- Tabs -->
-						<div class="tab-element">
-							<ul class="nav nav-tabs" id="myTab" role="tablist">
-								<li class="nav-item">
-									<a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Curabitur venv</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" id="2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">enatis efficit</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" id="3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">ur lorem sed </a>
-								</li>
-							</ul>
-							<div class="tab-content" id="myTabContent">
-								<!-- single tab content -->
-								<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
-									<p>Suspendisse dictum enim sit amet libero malesuada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. Suspendisse dictum enim sit amet libero malesuada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. </p>
-								</div>
-								<div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
-									<p>Suspendisse dictum enim sit amet libero malesuada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. Suspendisse dictum enim sit amet libero malesuada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. </p>
-								</div>
-								<div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-									<p>Suspendisse dictum enim sit amet libero malesuada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. Suspendisse dictum enim sit amet libero malesuada feugiat. Praesent malesuada congue magna at finibus. In hac habitasse platea dictumst. </p>
-								</div>
-							</div>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 			<!-- loaders -->
 			<div class="element">
-				<div class="sp-title">loaders</div>
+				<div class="sp-title">Our features</div>
 				<div class="row">
 					<div class="col-lg-3 cp-item">
-						<div class="circle-progress" data-cpid="id-1" data-cpvalue="75" data-cpcolor="#dcdcdc" data-cptitle="Inspiration"></div>
+						<div class="circle-progress" data-cpid="id-1" data-cpvalue="75" data-cpcolor="#000080" data-cptitle="Inspiration"></div>
 					</div>
 					<div class="col-lg-3 cp-item">
-						<div class="circle-progress" data-cpid="id-2" data-cpvalue="59" data-cpcolor="#dcdcdc" data-cptitle="Peace"></div>
+						<div class="circle-progress" data-cpid="id-2" data-cpvalue="80" data-cpcolor="#AFEEEE" data-cptitle="Peace"></div>
 					</div>
 					<div class="col-lg-3 cp-item">
-						<div class="circle-progress" data-cpid="id-3" data-cpvalue="100" data-cpcolor="#dcdcdc" data-cptitle="hard work"></div>
+						<div class="circle-progress" data-cpid="id-3" data-cpvalue="100" data-cpcolor="#FF0000" data-cptitle="hard work"></div>
 					</div>
 					<div class="col-lg-3 cp-item">
-						<div class="circle-progress" data-cpid="id-4" data-cpvalue="83" data-cpcolor="#dcdcdc" data-cptitle="LOve"></div>
+						<div class="circle-progress" data-cpid="id-4" data-cpvalue="90" data-cpcolor="#FFC0CB" data-cptitle="LOve"></div>
 					</div>
 				</div>
 			</div>
@@ -251,7 +225,7 @@
 			<div class="element">
 				<div class="sp-title">milestones</div>
 				<div class="row">
-					<div class="col-lg-3 fact-box">
+					<!-- <div class="col-lg-3 fact-box">
 						<div class="fact-content">
 							<i class="flaticon-gamepad"></i>
 							<h2>48</h2>
@@ -264,7 +238,7 @@
 							<h2>7</h2>
 							<p>AWARDS WON</p>
 						</div>
-					</div>
+					</div> -->
 					<div class="col-lg-3 fact-box">
 						<div class="fact-content">
 							<i class="flaticon-alarm-clock"></i>
@@ -282,7 +256,7 @@
 				</div>
 			</div>
 			<!-- Icon box -->
-			<div class="element">
+			<!-- <div class="element">
 				<div class="sp-title">Icon boxes</div>
 				<div class="row">
 					<div class="col-md-4">
@@ -307,7 +281,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 	<!-- Elements section end -->
