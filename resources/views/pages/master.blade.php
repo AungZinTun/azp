@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>   @yield('title', 'AZ Photography') </title>
+	<title>   @yield('title', 'Photography') </title>
 	<meta charset="UTF-8">
 	<meta name="description" content="HALO photography portfolio template">
 	<meta name="keywords" content="photography, portfolio, onepage, creative, html">
